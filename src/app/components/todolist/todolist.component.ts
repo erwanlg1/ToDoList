@@ -12,8 +12,6 @@ import { Title } from '@angular/platform-browser';
 export class TodolistComponent {
   todos!: Todo[];
   todoTitle!: String;
-  idForTodo!: number;
-  selectedTodo: any = [];
 
   private TODO_URL = 'http://localhost:3000/todo/';
   constructor(private todoService: TodoService, private http: HttpClient) {
