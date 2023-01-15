@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app/app.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { AddtodoComponent } from './components/addtodo/addtodo.component';
 
