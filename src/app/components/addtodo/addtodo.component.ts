@@ -11,6 +11,7 @@ export class AddtodoComponent {
   todos!: Todo[];
   todoTitle!: String;
   idForTodo!: number;
+
   private TODO_URL = 'http://localhost:3000/todo/';
 
   constructor(private http: HttpClient) {}
@@ -34,6 +35,5 @@ export class AddtodoComponent {
         });
       });
     this.todoTitle = '';
-    this.idForTodo++;
   }
 }
