@@ -20,6 +20,8 @@ export class TodolistComponent {
 
   ngOnInit() {}
 
+
+///////////////////TEST//////////////////////////
   checkTodo(id: number): void {
     console.log('check');
     const checkedTodo = (<HTMLInputElement>event?.target).checked;
@@ -32,7 +34,10 @@ export class TodolistComponent {
         this.todos.forEach((todo) => (todo.completed = checkedTodo));
       });
   }
+ ///////////////////TEST////////////////////////// 
 
+
+ 
   deleteTodo(id: number): void {
     this.http.delete(this.TODO_URL + id).subscribe((response: any) => {
       this.todos = this.todos.filter((todo) => todo.id !== id);
