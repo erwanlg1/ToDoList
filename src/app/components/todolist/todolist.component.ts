@@ -37,12 +37,12 @@ export class TodolistComponent {
  ///////////////////TEST////////////////////////// 
 
 
- 
+
   deleteTodo(id: number): void {
     this.http.delete(this.TODO_URL + id).subscribe((response: any) => {
       this.todos = this.todos.filter((todo) => todo.id !== id);
     });
 
-    this.todos = this.todos.filter((todo) => todo.id !== id);
+;
   }
 }
